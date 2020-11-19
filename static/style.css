@@ -1,0 +1,101 @@
+body {
+    background-color:rgb(65,65,65);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+  }
+
+.grid {
+    background-color: rgb(65,65,65);
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "header header header header header header header header header header header header"
+    "topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav"
+    "desc desc desc desc desc desc desc desc desc desc desc desc"
+    "spin spin spin spin spin spin spin spin spin spin spin spin"
+    "spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+
+  /* Top Naviagtion Section*/
+.topnav {
+    grid-area: topnav;
+    background-color: rgb(28,28,28);
+    width: 100%;
+  }
+
+  /* Style the topnav links */
+.topnav a {
+    background: rgb(38,38,38);
+    color: rgb(208,212,223);
+    display: block;
+    float: left;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(48,48,48);
+    color: rgb(218,222,233);
+  }
+
+/* Header/Blog Title */
+.header {
+    height: 300px;
+    grid-area: header;
+    background-color: rgb(31, 29, 29);
+    color: rgb(0,183,255);
+  }
+  
+  /* Spacer with motto statement */
+.desc{
+    grid-area: desc;
+    background-color: rgb(73,73,73);
+    color: rgb(244,80,51);
+    padding: 20px;
+    text-align: center;
+  }
+
+/* About section */
+.spin{
+    height: 400px;
+    width: 99vw;
+    grid-area: spin;
+    background-color: rgb(48,48,48);
+  }
+
+  .spacer{
+    padding: 20px;
+    grid-area: spacer;
+    background-color: rgb(73,73,73);
+    color: white;
+    text-align: center;
+  }
+
+  .footer {
+    min-height: 100px;
+    max-height: 200px;
+    grid-area: footer;
+    background-color: rgb(55,55,55);
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .item {
+    height: 200px;
+    width: 300px;
+    /*background-image: url('images/items/Apprentice1Element5x.png');*/
+    background-color: rgb(10,100,100);
+    margin: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    display: inline-block;
+  }
