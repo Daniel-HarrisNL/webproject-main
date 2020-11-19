@@ -63,7 +63,7 @@ body {
 
 /* About section */
 .spin{
-    height: 400px;
+    height: 100vh;
     width: 99vw;
     grid-area: spin;
     background-color: rgb(48,48,48);
