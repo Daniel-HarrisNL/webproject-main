@@ -1,11 +1,11 @@
 body {
-    background-color:rgb(65,65,65);
+  background-color: rgb(21,21,31);
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     overflow-x: hidden;
   }
 
-.grid {
-    background-color: rgb(65,65,65);
+.grid-game {
+    background-color: rgb(21,21,31);
     display: grid;
     height: 100vh;
     width: 100vw;
@@ -20,42 +20,63 @@ body {
     "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
 
+  .grid-home {
+    background-color: rgb(21,21,31);
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav"
+    "case case case case case case case case case case case case"
+    "open open open open open open open open open open open open"
+    "spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+
   /* Top Naviagtion Section*/
 .topnav {
     grid-area: topnav;
-    background-color: rgb(28,28,28);
-    width: 100%;
+    background-color: rgb(21,21,31);
+    overflow: hidden;
+    width:600px;
+    margin:0 auto;
   }
 
   /* Style the topnav links */
 .topnav a {
-    background: rgb(38,38,38);
-    color: rgb(208,212,223);
+    background: rgb(21,21,31);
+    border-right: 2px solid rgb(97,97,107);
+    color: rgb(186,187,193);
     display: block;
     float: left;
-    padding: 14px 16px;
+    padding: 4px 16px;
     text-align: center;
     text-decoration: none;
+    width: 100px;   
+}
+.topnav a:first-child{
+  border-left: 2px solid rgb(97,97,107);
 }
 
 /* Change color on hover */
 .topnav a:hover {
-    background-color: rgb(48,48,48);
-    color: rgb(218,222,233);
+  border-bottom: 2px solid rgb(97,97,107);
   }
 
 /* Header/Blog Title */
 .header {
     height: 300px;
     grid-area: header;
-    background-color: rgb(31, 29, 29);
+    background-color: rgb(21,21,31);
     color: rgb(0,183,255);
   }
   
   /* Spacer with motto statement */
 .desc{
     grid-area: desc;
-    background-color: rgb(73,73,73);
+    background-color: rgb(21,21,31);
     color: rgb(244,80,51);
     padding: 20px;
     text-align: center;
@@ -66,13 +87,13 @@ body {
     height: 100vh;
     width: 99vw;
     grid-area: spin;
-    background-color: rgb(48,48,48);
+    background-color: rgb(21,21,31);
   }
 
   .spacer{
     padding: 20px;
     grid-area: spacer;
-    background-color: rgb(73,73,73);
+    background-color: rgb(21,21,31);
     color: white;
     text-align: center;
   }
@@ -81,7 +102,7 @@ body {
     min-height: 100px;
     max-height: 200px;
     grid-area: footer;
-    background-color: rgb(55,55,55);
+    background-color: rgb(21,21,31);
     color: white;
     text-align: center;
     margin-top: 80px;
@@ -98,4 +119,10 @@ body {
     background-size: cover;
     position:relative;
     display: inline-block;
+  }
+
+  .column {
+    height: 200px;
+    width: 33%;
+    float: left;
   }

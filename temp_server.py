@@ -7,6 +7,19 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template('index.html')
+
+@app.route('/item')
+def item():
+    return render_template('item.html')
+
+@app.route('/dino')
+def dino():
+    return render_template('dino.html')
+
+@app.route('/blueprint')
+def blueprint():
+    return render_template('blueprint.html')
+
     
 if __name__ == '__main__':
     #Inbound setting in EC2 must be set up with Custom TCP Rule, Port range 8080, Source = Anywhere
