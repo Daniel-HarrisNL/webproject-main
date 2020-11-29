@@ -6,7 +6,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('home.html')
+
+@app.route('/cases')
+def cases():
+    return render_template('cases.html')
 
 @app.route('/item')
 def item():

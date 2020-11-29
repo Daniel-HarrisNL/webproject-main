@@ -10,15 +10,14 @@ body {
     height: 100vh;
     width: 100vw;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-    "header header header header header header header header header header header header"
     "topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav"
-    "desc desc desc desc desc desc desc desc desc desc desc desc"
     "spin spin spin spin spin spin spin spin spin spin spin spin"
-    "spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer"
+    "desc desc desc desc desc desc desc desc desc desc desc desc"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
+  
 
   .grid-home {
     background-color: rgb(21,21,31);
@@ -26,12 +25,11 @@ body {
     height: 100vh;
     width: 100vw;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
     "topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav"
     "case case case case case case case case case case case case"
     "open open open open open open open open open open open open"
-    "spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
 
@@ -42,6 +40,7 @@ body {
     overflow: hidden;
     width:600px;
     margin:0 auto;
+    padding-bottom: 100px;
   }
 
   /* Style the topnav links */
@@ -84,7 +83,8 @@ body {
 
 /* About section */
 .spin{
-    height: 100vh;
+    margin-top: 100px;
+    height: 300px;
     width: 99vw;
     grid-area: spin;
     background-color: rgb(21,21,31);
@@ -121,8 +121,64 @@ body {
     display: inline-block;
   }
 
-  .column {
-    height: 200px;
-    width: 33%;
+  .footer-column1 {
+    height: 100px;
+    width: 20%;
+    text-align: left;
+    color: rgb(56,57,62);
+    float: left;
+    margin-left: 25%;
+  }
+  .footer-column2 {
+    height: 100px;
+    width: 20%;
+    color: rgb(56,57,62);
+    text-align: left;
     float: left;
   }
+  .footer-column3 {
+    height: 100px;
+    width: 20%;
+    color: rgb(56,57,62);
+    text-align: left;
+    float: left;
+  }
+  
+  .footer-column1 h3{color: rgb(218,219,224);}
+  .footer-column2 h3{color: rgb(218,219,224);}
+  .footer-column3 h3{color: rgb(218,219,224);}
+  .footer-column1 a{color: rgb(56,57,62);}
+  .footer-column2 a{color: rgb(56,57,62);}
+  .footer-column3 a{color: rgb(56,57,62);}
+
+  #spinbutton{
+    background-color:green;
+    color: white;
+    font-size: 18pt;
+    padding-inline: 40px;
+    padding-block: 10px;
+  }
+
+.case{
+  color: white;
+  text-align: center;
+}
+
+.case-left{
+  float:left;
+  width: 33%;
+  padding: 50px;
+
+}
+.case-center{
+  float: left;
+  width: 33%;
+  padding: 50px;
+  
+}
+.case-right{
+  float:left;
+  width: 33%;
+  padding: 50px;
+  
+}
