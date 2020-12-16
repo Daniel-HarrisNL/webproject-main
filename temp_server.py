@@ -24,6 +24,25 @@ def dino():
 def blueprint():
     return render_template('blueprint.html')
 
+@app.route('/history')
+def history():
+    return render_template('history.html')
+
+@app.route('/faq')
+def faq():
+    return render_template('faq.html')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
+@app.route('/panel')
+def panel():
+    return render_template('panel.html')
     
 if __name__ == '__main__':
     #Inbound setting in EC2 must be set up with Custom TCP Rule, Port range 8080, Source = Anywhere
